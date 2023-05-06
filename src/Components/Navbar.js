@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function Navbar(props) {
   return (
@@ -15,9 +15,9 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="">Home</a>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link" href="/about">About</a>
-              </li> */}
+              </li>
             </ul>
             <div className="form-check form-switch mx-5" >
               <input className="form-check-input" type="checkbox" role="switch" onClick={props.toggleMode} />

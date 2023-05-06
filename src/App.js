@@ -1,14 +1,14 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Textforms from './Components/Textforms';
-// import About from './Components/About';
+import About from './Components/About';
 import React, { useState } from 'react';
 import Alert from './Components/Alert';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 
 function App(props) {
@@ -40,22 +40,22 @@ function App(props) {
   }, 1200);
   return (
     <>
-      {/* <Router> */}
+      <Router>
       <Navbar title="TextUtils" mode={mode} toggleMode={togglemode} />
       <Alert msg={msg} />
       
       <div className="container">
-          {/* <Switch>
-          <Route exact path="/"> */}
+          <Switch>
+          <Route exact path="/">
               <Textforms text="Text Analyser- Change mode | Changes to Uppercase | Clear Text | Remove Extraspaces" mode={mode} alertmsg={alertmsg} />
-          {/* </Route>
+          </Route>
           <Route path="/about">
               <About mode={mode}/>
          </Route>
             
-          </Switch> */}
+          </Switch>
       </div>
-      {/* </Router> */}
+      </Router>
 
 
     </>
